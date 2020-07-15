@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration:500s;
+  animation-name: fade;
+  animation-duration:500s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chinese_home.html">Basic</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_overview.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_publications.html">Publications</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_conferences.html">Conferences</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_engagements.html">engagements</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_lectures.html">Lectures</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_industry.html">Industry</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_guidance.html">Guidance</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="chin_prototypes.html">Prototypes</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="chin_projects.html">Projects</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="chin_videologs.html">Vlogs</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="chin_awards.html">Awards</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="gallery/gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="white">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/SJTU.png');"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><img src="images/mm.jpg" alt="Image"/></a></div>
+         <div class="h2 title">何玄</div>
+          <p class="category text-white">助理研究员<br/>
+          上海市华山路1954号 中院302 (SJTU)<br/>
+          <div class="h2 title">刊物</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+<div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="./images/wechat_qr.jpeg"  rel="tooltip" title="Add me on Wechat"><i class="fa fa-wechat"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/Hareeshpillai" target="_blank"rel="tooltip" title="Follow me on Github"><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://tw.linkedin.com/in/hareeshpillai" target="_blank" rel="tooltip" title="Follow me on LinkedIn"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="slideshow-container">
+ <div class="h4 text-center mb-4 title">    </div>
+
+<div class="mySlides fade">
+<img src="images/publications/1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<img src="images/publications/2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+<img src="images/publications/3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3s)"></span>
+
+</div>
+
+
+</div>
+    </div>
+
+
+<div class="section" id="research">
+    <div class="container cc-education">
+      <div class="h4 text-center mb-4 title">刊物</div>
+
+        <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+              <div class="h5">Early Access, DOI</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5">Blockchain technology adoption barriers in the Indian agricultural supply chain: An integrated approach. Resources,Conservation & Recycling</div>
+
+              <p> Yadav, V. S., Singh, A. R., Raut, R. D., & Govindarajan, U. H.* (2020). Blockchain technology adoption barriers in the Indian agricultural supply chain: An integrated approach. Resources,Conservation & Recycling (Early Access, DOI: 10.1016/j.resconrec.2020.104877).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+              <div class="h5"> 中國機械工程學刊第</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5">Therapy for Phobias Using Immersive Virtual Reality Technology</div>
+
+              <p> Trappey, A. J.*, Trappey, C. V., Chang, C. M., Shih, X. Y., Govindarajan, U. H., Gupta,
+N., & Su, I. A. (2020). Behavioral Therapy for Phobias Using Immersive Virtual Reality
+Technology. 中國機械工程學刊第, 四十一卷第二期第 131~140 頁</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5">IEEE Engineering Management Review </div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5">Enabling technologies for Industry 4.0 manufacturing and supply chain: concepts, current status,
+and adoption challenges</div>
+
+              <p>Raut, R. D., Gotmare, A., Narkhede, B. E., Govindarajan, U. H.*, & Bokade, S. U. (2020).
+Enabling technologies for Industry 4.0 manufacturing and supply chain: concepts, current status,
+and adoption challenges. IEEE Engineering Management Review (Early Access, DOI:
+10.1109/EMR.2020.2987884)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5"> IEEE Transactions on Engineering Management</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5">Patent Value
+Analysis Using Deep Learning Models - The Case of IoT Technology Mining for Manufacturing
+Industries</div>
+
+              <p> Trappey, A. J., Trappey, C. V., Govindarajan, U. H.*, & Sun, J. J. (2019). Patent Value
+Analysis Using Deep Learning Models - The Case of IoT Technology Mining for Manufacturing
+Industries. IEEE Transactions on Engineering Management (Early Access, DOI:
+10.1109/TEM.2019.2957842).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5"> Advanced Engineering Informatics</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5"> Intelligent Collaborative Patent
+Mining Using Excessive Topic Generation</div>
+
+              <p> Govindarajan, U. H., Trappey, A. J., & Trappey, C. V. (2019). Intelligent Collaborative Patent
+Mining Using Excessive Topic Generation. Advanced Engineering Informatics, vol. 42, pp.
+100955. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5"> International Journal of Systematic Innovation</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5">Review of Systematic Software
+Innovation Using TRIZ</div>
+
+              <p> Govindarajan, U. H.*, Sheu, D. D., & Mann, D. (2019). Review of Systematic Software
+Innovation Using TRIZ. International Journal of Systematic Innovation, vol. 5, pp. 72-90, ISSN:
+2077-7973.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5"> World Patent Information</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5"> Construction
+and Validation of an Ontology-based Technology Function Matrix: Text Mining of Cyber
+Physical System Patent Portfolios</div>
+
+              <p> Trappey, A. J., Trappey, C. V., Govindarajan, U. H.*, & Jhuang, A. C. (2018). Construction
+and Validation of an Ontology-based Technology Function Matrix: Text Mining of Cyber
+Physical System Patent Portfolios. World Patent Information, vol. 55, pp. 19-24.
+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5"> Complexity</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5">  Immersive Technology for
+Human Centric Cyber Physical Systems in Complex Manufacturing Processes: A
+Comprehensive Overview of Global Patent Profile Using Collective Intelligence</div>
+
+              <p>  Govindarajan, U. H., Trappey, A. J., & Trappey, C. V. (2018). Immersive Technology for
+Human Centric Cyber Physical Systems in Complex Manufacturing Processes: A
+Comprehensive Overview of Global Patent Profile Using Collective Intelligence. Complexity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5"> IEEE Access</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5"> A
+Review of Technology Standards and Patent Portfolios for Enabling Cyber-Physical Systems in
+Advanced Manufacturing</div>
+
+              <p> Trappey, A. J., Trappey, C. V., Govindarajan, U. H., Sun, J. J., & Chuang, A. C. (2016). A
+Review of Technology Standards and Patent Portfolios for Enabling Cyber-Physical Systems in
+Advanced Manufacturing. IEEE Access, vol. 4, pp. 7356-7382.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <div class="card">
+        <div class="row">
+          <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body cc-education-header">
+
+              <div class="h5">Advanced Engineering Informatics</div>
+            </div>
+          </div>
+          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+            <div class="card-body">
+              <div class="h5"> A
+Review of Essential Standards and Patent Landscapes for The Internet of Things: A Key Enabler
+for Industry 4.0</div>
+
+              <p> Trappey, A. J., Trappey, C. V., Govindarajan, U. H., Chuang, A. C., & Sun, J. J. (2016). A
+Review of Essential Standards and Patent Landscapes for The Internet of Things: A Key Enabler
+for Industry 4.0. Advanced Engineering Informatics, vol. 33, pp. 208-229.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="./images/wechat_qr.jpeg" ><i class="fa fa-wechat fa-2x " aria-hidden="true"></i></a><a class="cc-github btn btn-link" target="_blank" href="https://github.com/Hareeshpillai" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><a class="cc-linkedin btn btn-link" href="https://tw.linkedin.com/in/hareeshpillai" target="_blank"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a></div>
+      
+    </footer>
+      <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <script src="js/core/jquery.3.2.1.min.js"></script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/core/bootstrap.min.js"></script>
+    <script src="js/now-ui-kit.js?v=1.1.0"></script>
+    <script src="js/aos.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

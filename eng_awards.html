@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration:500s;
+  animation-name: fade;
+  animation-duration:500s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_overview.html">Overview</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_publications.html">Publications</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_conferences.html">Conferences</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_engagements.html">Engagements</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_lectures.html">Lectures</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_industry.html">Industry</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_guidance.html">Guidance</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="eng_prototypes.html">Prototypes</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="eng_projects.html">Projects</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="eng_videologs.html">Vlogs</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="eng_awards.html">Awards</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="gallery/gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="white">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/SJTU.png');"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><img src="images/mm.jpg" alt="Image"/></a></div>
+          <div class="h2 title">Dr. Hareesh</div>
+          <p class="category text-white">Assistant Researcher<br/>
+          Sino-US Global Logistics Institute, Antai College of Economics and Management, <br/>Shanghai Jiao Tong University (SJTU)<br/>
+          <div class="h2 title">Awards</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/hareeshg.pillai" target="_blank" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://scholar.google.com.tw/citations?user=M52THIcAAAAJ&hl=en&oi=ao" target="_blank"rel="tooltip" title="Follow me on Google Scholar"><i class="fa fa-google scholar"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/Hareeshpillai" target="_blank"rel="tooltip" title="Follow me on Github"><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://tw.linkedin.com/in/hareeshpillai" target="_blank" rel="tooltip" title="Follow me on LinkedIn"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <img src="images/awards/1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/awards/2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/awards/3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/awards/4.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+</div>
+    </div>
+
+	<!-- start of block -->
+
+  <div class="section" id="awards">
+      <div class="container cc-prototypes">
+        <div class="h4 text-center mb-4 title">Awards</div>
+        <div class="card">
+          <div class="row">
+            <div  data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+
+           <a href="./images/Post office competition stage 1 selection-1.jpg" target="_blank">
+          <img src="./images/rsz_post_office_competition_stage_1_selection-1.jpg"></a>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Post office competition stage 1 selection</div>
+                <p>A team from my programming design and applications course participated in the National Postal Office Artificial Intelligence competition and cleared the first stage of evaluations. Out of the 401 participating teams from all over Taiwan, only 60 teams passed this first stage. Our team has worked hard toward practical data-driven ideation and design. An interesting fact is the 4 students in our team (2 students are Industrial Engineering majors, 1 student is from economics, and 1 student from the mathematics department). We are now working towards round 2.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div  data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+
+                  <a href="./awards/iiii.jpg" target="_blank">
+                    <img src="./images/rsz_iiii.jpg"></a>
+
+        </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Certificate of Appreciation </div>
+                <p>Certificate of appreciation for continuous effort towards internship programs since 2017 from the College of Engineering, National Tsing Hua University.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="row">
+              <div  data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+
+                    <a href="./awards/yunlin,taiwan-1.jpg" target="_blank">
+                      <img src="./images/rsz_yunlintaiwan-1.jpg"></a>
+
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Best Paper Award  </div>
+                  <p>IEEE best paper award in Proceedings of the 2018 IEEE International Conference on Advanced Manufacturing (ICAM), Yunlin, Taiwan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+              <div class="row">
+                <div  data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+
+                      <a href="#" target="_blank">
+                        <img src="./awards/Blank.png"></a>
+
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Ministry of Science and Technology, Travel Grant </div>
+                    <p>29th Annual Conference of the International Information Management Association (IIMA), Houston, TX, USA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="row">
+                  <div  data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+
+                        <a href="./awards/ismi best paper finalist.JPG" target="_blank">
+                          <img src="./images/rsz_ismi_best_paper_finalist.jpg"></a>
+
+                    </div>
+                  </div>
+                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body">
+                      <div class="h5">Best Paper Award Finalist </div>
+                      <p>Awarded in Proceedings of the 2018 International Symposium on Semiconductor Manufacturing Intelligence (ISMI), Hsinchu, Taiwan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                  <div class="row">
+                    <div  data-aos-offset="50" data-aos-duration="500">
+                      <div class="card-body cc-experience-header">
+
+                          <a href="#" target="_blank">
+                            <img src="./awards/Blank.png"></a>
+
+                      </div>
+                    </div>
+                    <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                      <div class="card-body">
+                        <div class="h5">Ministry of Science and Technology, Travel Grant </div>
+                        <p>International Conference on Industrial, Enterprise, and System Engineering (ICoIESE), Bandung, Indonesia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+        <div class="card">
+          <div class="row">
+            <div  data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+
+                  <a href="./awards/best student paper.JPG" target="_blank">
+                    <img src="./images/rsz_best_student_paper.jpg"></a>
+
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">Best Paper Award Finalist </div>
+                <p>Awarded in Proceedings of the 17th Asia Pacific Industrial Engineering & Management Systems Conference (APIEMS), Taipei, Taiwan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="row">
+              <div  data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+
+                    <a href="./awards/Baljeet shashtri-1.jpg" target="_blank">
+                      <img src="./images/rsz_baljeet_shashtri-1.jpg"></a>
+
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Shri. Baljit Shastri Award </div>
+                  <p>Recipient of the prestigious award for overall excellence in Engineering.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+              <div class="row">
+                <div  data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+
+                      <a href="./awards/1.1 H. Gu_1&2-1.jpg" target="_blank">
+                        <img src="./images/rsz_11_h_gu_1&2-1.jpg"></a>
+
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">NTHU Global Research Internship Scholarship</div>
+                    <p>Awarded scholarship to carry out an international internship at NTHU, Taiwan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      </div>
+    </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="https://www.facebook.com/hareeshg.pillai" target="_blank"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-google btn btn-link " href="https://scholar.google.com.tw/citations?user=M52THIcAAAAJ&hl=en&oi=ao" target="_blank"><i class="fa fa-google fa-2x " aria-hidden="true"></i></a><a class="cc-github btn btn-link" target="_blank" href="https://github.com/Hareeshpillai" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><a class="cc-linkedin btn btn-link" href="https://tw.linkedin.com/in/hareeshpillai" target="_blank"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a></div>
+      
+      
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js"></script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/core/bootstrap.min.js"></script>
+    <script src="js/now-ui-kit.js?v=1.1.0"></script>
+    <script src="js/aos.js"></script>
+    <script src="scripts/main.js"></script>
+     <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </body>
+</html>
